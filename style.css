@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Slab", serif;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+div {
+  width: 50%;
+  margin: 25vh auto 25vh auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 5px 5px 5px rgba(53, 3, 69, 0.142);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  div {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
